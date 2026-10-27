@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta content="Camouflaged object detection (COD) and camouflaged instance segmentation (CIS) aim to recognize and segment objects that are blended into their..." name="description">
+<meta content="CamoFA" name="keywords">
+<meta content="width=device-width, initial-scale=1" name="viewport">
+  <meta content="CamoFA: A Learnable Fourier-based Augmentation for Camouflage Segmentation" property="og:title">
+  <meta content="Camouflaged object detection (COD) and camouflaged instance segmentation (CIS) aim to recognize and segment objects that are blended into their..." property="og:description">
+  <meta content="website" property="og:type">
+  <meta content="https://minhquanlecs.github.io/camofa/static/images/fig1.png" property="og:image">
+<link rel="canonical" href="https://minhquanlecs.github.io/camofa/">
+<meta property="og:url" content="https://minhquanlecs.github.io/camofa/">
+<title>CamoFA: A Learnable Fourier-based Augmentation for Camouflage Segmentation</title>
+
+
+
+<link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+<link href="./static/css/bulma.min.css" rel="stylesheet">
+<link href="./static/css/bulma-carousel.min.css" rel="stylesheet">
+<link href="./static/css/bulma-slider.min.css" rel="stylesheet">
+<link href="./static/css/fontawesome.all.min.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" rel="stylesheet">
+<link href="./static/css/index.css" rel="stylesheet">
+<link href="./static/images/favicon.png" rel="icon" type="image/png">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="./static/js/fontawesome.all.min.js"></script>
+<script src="./static/js/bulma-carousel.min.js"></script>
+<script src="./static/js/bulma-slider.min.js"></script>
+<script src="./static/js/index.js"></script>
+</head>
+<body>
+<nav aria-label="main navigation" class="navbar" role="navigation">
+<div class="navbar-brand">
+<a aria-expanded="false" aria-label="menu" class="navbar-burger" role="button">
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+<span aria-hidden="true"></span>
+</a>
+</div>
+<div class="navbar-menu">
+<div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+<a aria-label="Home" class="navbar-item" href="https://minhquanlecs.github.io/camofa/">
+<span class="icon">
+<i class="fas fa-home"></i>
+</span>
+</a>
+
+</div>
+</div>
+</nav>
+<section class="hero">
+<div class="hero-body">
+<div class="container is-max-desktop">
+<div class="columns is-centered">
+<div class="column has-text-centered">
+<h1 class="title is-1 publication-title">CamoFA: A Learnable Fourier-based Augmentation for Camouflage Segmentation</h1>
+<div class="is-size-5 publication-authors">
+<span class="author-block">Minh-Quan&nbsp;Le<sup>1,2,3&dagger;</sup>,</span>
+<span class="author-block">Minh-Triet&nbsp;Tran<sup>1,2,4&dagger;</sup>,</span>
+<span class="author-block">Trung-Nghia&nbsp;Le<sup>1,2</sup>,</span>
+<span class="author-block">Tam&nbsp;V.&nbsp;Nguyen<sup>5</sup>,</span>
+<span class="author-block">Thanh-Toan&nbsp;Do<sup>6</sup></span>
+</div>
+<div class="is-size-5 publication-authors">
+<span class="author-block"><sup>1</sup>University of Science, Ho Chi Minh City, Vietnam,</span>
+<span class="author-block"><sup>2</sup>Vietnam National University, Ho Chi Minh City, Vietnam,</span>
+<span class="author-block"><sup>3</sup>Stony Brook University, United States,</span>
+<span class="author-block"><sup>4</sup>John von Neumann Institute, Ho Chi Minh City, Vietnam,</span>
+<span class="author-block"><sup>5</sup>University of Dayton, United States,</span>
+<span class="author-block"><sup>6</sup>Monash University, Australia</span>
+</div>
+
+          <div class="is-size-5 publication-authors">
+<span class="author-block">Winter Conference on Applications of Computer Vision (WACV) 2025</span>
+</div>
+
+          <div class="is-size-5 publication-authors">
+<span class="author-block"><sup>&dagger;</sup>Equal&nbsp;contribution</span>
+</div>
+<div class="column has-text-centered">
+<div class="publication-links">
+<span class="link-block">
+<a aria-disabled="true" class="external-link button is-normal is-rounded is-dark" disabled title="Coming soon">
+<span class="icon">
+<i class="fas fa-file-pdf"></i>
+</span>
+<span>Paper&nbsp;(coming&nbsp;soon)</span>
+</a>
+</span>
+<span class="link-block">
+<a aria-disabled="true" class="external-link button is-normal is-rounded is-dark" disabled title="Coming soon">
+<span class="icon">
+<i class="fab fa-github"></i>
+</span>
+<span>Code&nbsp;(coming&nbsp;soon)</span>
+</a>
+</span>
+<span class="link-block">
+<a class="external-link button is-normal is-rounded is-dark" href="https://arxiv.org/abs/2308.15660">
+<span class="icon">
+<i class="ai ai-arxiv"></i>
+</span>
+<span>arXiv</span>
+</a>
+</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+<section class="hero teaser">
+<div class="container is-max-desktop">
+<div class="hero-body">
+
+<img alt="Figure 1: Our CamoFA not only preserves the spatial structure of an image but also highlights the underlying structure of camouflaged objects for better identification and segmentation." class="interpolation-image" height="489" loading="lazy" src="./static/images/fig1.png" width="978">
+      <h2 class="subtitle has-text-centered">CamoFA improves COD and CIS results across&nbsp;three&nbsp;benchmarks.</h2>
+</div>
+</div>
+</section>
+
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Abstract</h2>
+<div class="content has-text-justified"><p>Camouflaged object detection (COD) and camouflaged instance segmentation (CIS) aim to recognize and segment objects that are blended into their surroundings, respectively. While several deep neural network models have been proposed to tackle those tasks, augmentation methods for COD and CIS have not been thoroughly explored. Augmentation strategies can help improve models' performance by increasing the size and diversity of the training data and exposing the model to a wider range of variations in the data. Besides, we aim to automatically learn transformations that help to reveal the underlying structure of camouflaged objects and allow the model to learn to identify better and segment&nbsp;camouflaged&nbsp;objects.</p><p>To achieve this, we propose a learnable augmentation method in the frequency domain for COD and CIS via the Fourier transform approach, dubbed CamoFA. Our method leverages a conditional generative adversarial network and cross-attention mechanism to generate a reference image and an adaptive hybrid swapping with parameters to mix the low-frequency component of the reference image and the high-frequency component of the input image. This approach aims to make camouflaged objects more visible for detection and segmentation models. Without bells and whistles, our proposed augmentation method boosts the performance of camouflaged object detectors and instance segmenters&nbsp;by&nbsp;large&nbsp;margins.</p></div>
+</div>
+</div>
+
+
+
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Method</h2>
+<div class="content has-text-justified"><p>CamoFA uses a conditional generative model to create an image reference, then applies cross-attention between the input and generated images. It combines the reference image&rsquo;s low-frequency Fourier amplitude with the input image&rsquo;s high-frequency amplitude, preserving the input phase; an adaptive parameter&nbsp;controls&nbsp;the&nbsp;swap.</p></div>
+<div class="content has-text-centered"><img alt="Figure 2: Overview of the proposed CamoFA." class="interpolation-image" height="718" loading="lazy" src="./static/images/fig2.png" width="2085"><p class="is-size-7 has-text-grey-dark has-text-justified mt-2"><strong>Figure&nbsp;2.</strong> Overview of the proposed CamoFA. Our method leverages a conditional generative adversarial network and cross-attention mechanism to generate a reference image and an adaptive hybrid swapping with parameters to mix the low-frequency component of the reference image and the high-frequency component&nbsp;of&nbsp;the&nbsp;input&nbsp;image.</p></div></div>
+</div>
+
+
+
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Quantitative Results</h2>
+
+<p class="is-size-7 has-text-grey-dark has-text-justified mb-2"><strong>Table&nbsp;1.</strong> The effectiveness of our CamoFA in improving camouflaged object detection models on three benchmarks: CAMO [19], COD10K [8], and NC4K [22]. Our CamoFA drastically increases the performance of cutting-edge methods of COD, improved results are highlighted&nbsp;in&nbsp;blue&nbsp;color.</p><div class="content has-text-centered"><img alt="Table 1: The effectiveness of our CamoFA in improving camouflaged object detection models on three benchmarks: CAMO [19], COD10K [8], and NC4K [22]. Our CamoFA drastically increases the performance of cutting-edge methods of COD, improved results are highlighted in blue color." class="interpolation-image" height="576" loading="lazy" src="./static/images/table1.png" width="2067"></div><div class="content has-text-justified"><p>Across NC4K-Test, COD10K-Test, and CAMO-Test, adding CamoFA improves all four reported metrics for each of the five detectors. For example, SINetV2 on NC4K-Test rises from 0.847&nbsp;to 0.859&nbsp;in Sm while M falls&nbsp;from&nbsp;0.048&nbsp;to&nbsp;0.043.</p></div><div class="columns"><div class="column is-8 is-offset-2"><p class="is-size-7 has-text-grey-dark has-text-justified mb-2"><strong>Table&nbsp;2.</strong> Effectiveness of our CamoFA in improving CIS model OSFormer [28] and generic instance segmenters on two benchmarks: COD10K [8] and NC4K [22]. Our CamoFA significantly boosts the performance of state-of-the-art methods and improved results are highlighted&nbsp;in&nbsp;blue&nbsp;color.</p><div class="content has-text-centered"><img alt="Table 2: Effectiveness of our CamoFA in improving CIS model OSFormer [28] and generic instance segmenters on two benchmarks: COD10K [8] and NC4K [22]. Our CamoFA significantly boosts the performance of state-of-the-art methods and improved results are highlighted in blue color." class="interpolation-image" height="449" loading="lazy" src="./static/images/table2.png" width="988"></div></div></div><div class="content has-text-justified"><p>Adding CamoFA improves AP, AP50, and AP75&nbsp;for the evaluated CIS models on COD10K-Test and NC4K-Test. For Mask R-CNN, COD10K-Test AP rises from 0.276&nbsp;to 0.288; for OSFormer, it rises&nbsp;from&nbsp;0.424&nbsp;to&nbsp;0.435.</p></div><div class="columns"><div class="column is-8 is-offset-2"><p class="is-size-7 has-text-grey-dark has-text-justified mb-2"><strong>Table&nbsp;3.</strong> Comparisons between our CamoFA and existing generic augmentation methods in the camouflaged object detection task. Cutting-edge augmentations show ineffectiveness when applying to COD while our CamoFA boosts the performance of SINetV2&nbsp;[7]&nbsp;significantly.</p><div class="content has-text-centered"><img alt="Table 3: Comparisons between our CamoFA and existing generic augmentation methods in the camouflaged object detection task. Cutting-edge augmentations show ineffectiveness when applying to COD while our CamoFA boosts the performance of SINetV2 [7] significantly." class="interpolation-image" height="329" loading="lazy" src="./static/images/table3.png" width="990"></div></div></div><div class="content has-text-justified"><p>On SINetV2, CamoFA reaches 0.435&nbsp;AP on COD10K-Test and 0.450&nbsp;on NC4K-Test, exceeding the listed augmentation methods on both datasets. The caption notes that common augmentations can&nbsp;be&nbsp;ineffective&nbsp;for&nbsp;COD.</p></div><div class="columns"><div class="column is-8 is-offset-2"><p class="is-size-7 has-text-grey-dark has-text-justified mb-2"><strong>Table&nbsp;4.</strong> Comparisons between our CamoFA and existing generic augmentation methods in CIS task. State-of-the-art generic augmentations downgrade the effectiveness of OSFormer [28] while our CamoFA drastically improves CIS models'&nbsp;performance.</p><div class="content has-text-centered"><img alt="Table 4: Comparisons between our CamoFA and existing generic augmentation methods in CIS task. State-of-the-art generic augmentations downgrade the effectiveness of OSFormer [28] while our CamoFA drastically improves CIS models' performance." class="interpolation-image" height="329" loading="lazy" src="./static/images/table4.png" width="990"></div></div></div><div class="content has-text-justified"><p>For OSFormer, CamoFA reaches 0.435&nbsp;AP on COD10K-Test and 0.450&nbsp;on NC4K-Test, higher than the other listed augmentation methods. The paper reports that generic augmentations can reduce&nbsp;OSFormer&rsquo;s&nbsp;performance.</p></div><div class="columns"><div class="column is-8 is-offset-2"><p class="is-size-7 has-text-grey-dark has-text-justified mb-2"><strong>Table&nbsp;5.</strong> Our ablation study in the task of camouflaged object detection. CamoFA with a cross-attention mechanism and adaptive hybrid swapping achieves the best performance when plugged into SINetV2 [7]&nbsp;and&nbsp;ZoomNet&nbsp;[27].</p><div class="content has-text-centered"><img alt="Table 5: Our ablation study in the task of camouflaged object detection. CamoFA with a cross-attention mechanism and adaptive hybrid swapping achieves the best performance when plugged into SINetV2 [7] and ZoomNet [27]." class="interpolation-image" height="299" loading="lazy" src="./static/images/table5.png" width="992"></div></div></div><div class="content has-text-justified"><p>For both SINetV2 and ZoomNet, the setting with cross-attention and hybrid swapping gives the strongest reported results overall. SINetV2 reaches 0.826&nbsp;Sm on COD10K-Test and ZoomNet reaches 0.864; the table also shows gains from adding&nbsp;either&nbsp;component&nbsp;alone.</p></div><div class="columns"><div class="column is-8 is-offset-2"><p class="is-size-7 has-text-grey-dark has-text-justified mb-2"><strong>Table&nbsp;6.</strong> Our ablation study in the task of camouflaged instance segmentation. CamoFA with cross-attention mechanism and adaptive hybrid swapping achieves the best performance when plugged into OSFormer [28] and&nbsp;Mask&nbsp;R-CNN&nbsp;[12].</p><div class="content has-text-centered"><img alt="Table 6: Our ablation study in the task of camouflaged instance segmentation. CamoFA with cross-attention mechanism and adaptive hybrid swapping achieves the best performance when plugged into OSFormer [28] and Mask R-CNN [12]." class="interpolation-image" height="299" loading="lazy" src="./static/images/table6.png" width="992"></div></div></div><div class="content has-text-justified"><p>For Mask R-CNN and OSFormer, enabling both cross-attention and hybrid swapping yields the strongest reported AP values across COD10K-Test and NC4K-Test. Mask R-CNN reaches 0.288&nbsp;and 0.305&nbsp;AP, while OSFormer reaches 0.435&nbsp;and 0.450&nbsp;AP&nbsp;on&nbsp;those&nbsp;datasets.</p></div></div>
+</div>
+
+
+
+
+</div>
+</section>
+
+
+<section class="section">
+<div class="container is-max-desktop">
+
+<div class="columns is-centered has-text-centered">
+<div class="column is-four-fifths">
+<h2 class="title is-3">Qualitative Results</h2>
+<div class="content has-text-justified"><p>CamoFA improves detection and instance segmentation results across the reported benchmarks. Its adaptive hybrid swapping also produces more accurate qualitative segmentation results than the compared&nbsp;models&nbsp;without&nbsp;CamoFA.</p></div>
+<div class="columns"><div class="column is-8 is-offset-2"><div class="content has-text-centered"><img alt="Figure 3: Visualization of augmented images by our CamoFA." class="interpolation-image" height="678" loading="lazy" src="./static/images/fig3.jpg" width="985"><p class="is-size-7 has-text-grey-dark has-text-justified mt-2"><strong>Figure&nbsp;3.</strong> Visualization of augmented images by our CamoFA. Our proposed augmentation highlights the underlying structure of camouflaged objects for better identification and segmentation. We also compare the transformed results of our method with and without adaptive hybrid swapping. Our adaptive hybrid swapping can control the amount of texture and color information that is transferred from the reference image&nbsp;to&nbsp;the&nbsp;input&nbsp;image.</p></div></div></div><div class="columns"><div class="column is-8 is-offset-2"><div class="content has-text-centered"><img alt="Figure 4: Qualitative comparison of SINetV2 with and without our proposed CamoFA in COD task." class="interpolation-image" height="1488" loading="lazy" src="./static/images/fig4.jpg" width="1007"><p class="is-size-7 has-text-grey-dark has-text-justified mt-2"><strong>Figure&nbsp;4.</strong> Qualitative comparison of SINetV2 with and without our proposed&nbsp;CamoFA&nbsp;in&nbsp;COD&nbsp;task.</p></div></div></div><div class="columns"><div class="column is-8 is-offset-2"><div class="content has-text-centered"><img alt="Figure 5: Qualitative comparison of OSFormer with and without our proposed CamoFA in CIS task." class="interpolation-image" height="1439" loading="lazy" src="./static/images/fig5.jpg" width="1007"><p class="is-size-7 has-text-grey-dark has-text-justified mt-2"><strong>Figure&nbsp;5.</strong> Qualitative comparison of OSFormer with and without our proposed&nbsp;CamoFA&nbsp;in&nbsp;CIS&nbsp;task.</p></div></div></div></div>
+</div>
+
+
+
+
+</div>
+</section>
+
+
+<section class="section" id="BibTeX">
+<div class="container is-max-desktop content">
+<h2 class="title">BibTeX</h2>
+<pre><code>@inproceedings{le2025camofa,
+  author    = {Le, Minh-Quan and Tran, Minh-Triet and Le, Trung-Nghia and Nguyen, Tam V. and Do, Thanh-Toan},
+  title     = {CamoFA: A Learnable Fourier-based Augmentation for Camouflage Segmentation},
+  booktitle = {Winter Conference on Applications of Computer Vision (WACV)},
+  year      = {2025},
+}</code></pre>
+</div>
+</section>
+
+
+
+
+
+<footer class="footer">
+<div class="container">
+<div class="content has-text-centered">
+
+
+</div>
+<div class="columns is-centered">
+<div class="column is-8">
+<div class="content">
+<p>
+            This website is licensed under a <a href="http://creativecommons.org/licenses/by-sa/4.0/" rel="license">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+<p>
+            This means you are free to borrow the <a href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+          </p>
+</div>
+</div>
+</div>
+</div>
+</footer>
+</body>
+</html>
